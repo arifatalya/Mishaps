@@ -1,0 +1,142 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.3s, height 0.3s;
+}
+
+header.sticky {
+    background-color: #fff;
+    height: 70px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .logo {
+    position: relative;
+    margin: 0 30px 0 0;
+}
+
+header .logo img {
+    height: 38px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+header.sticky .logo img {
+    height: 35px;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+header .navigation li {
+    margin: 0;
+    white-space: nowrap;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+header .navigation li a:hover {
+    background-color: #cb1e4d;
+    color: #ffffff;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    margin: 0 0 3px 0;
+    color: #e0315e;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 19px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.logout-button:hover {
+    background-color: #54051b;
+    color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        display: none;
+        flex-wrap: wrap;
+    }
+
+    header .navigation.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100% - 700px);
+        background-color: #ffffff;
+        position: fixed;
+        margin-top: 20px;
+        top: 70px;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navigation li a {
+        font-size: 1.2rem;
+        color: #111;
+    }
+
+    .menuToggle {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        background-image: url(../assets/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .menuToggle.active {
+        background-image: url(../assets/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+    }
+}
