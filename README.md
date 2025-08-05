@@ -4,23 +4,12 @@
 > [!Warning]
 > *Catatan: Proyek ini tidak diperuntukkan untuk deployment production. Semua eksploitasi dilakukan sebagai simulasi edukatif.*
 
-Mishaps adalah aplikasi web sederhana yang dibuat sebagai target simulasi *penetration testing* untuk mendeteksi dua kerentanan berikut:
-- Insecure JWT
-- Weak Session ID
+Mishaps adalah aplikasi web sederhana yang dibuat sebagai target simulasi *penetration testing* untuk mendeteksi dua kerentanan, yaitu **Insecure JWT** dan **Weak Session ID**.
 
-## 👩🏻‍💻 Anggota Kelompok
-- Aisyah Arifatul Alya (2206059383)
-- Audrina Cristella Hasibuan (2206062926)
-
-## ✨ Tujuan Proyek
-- Mengidentifikasi kerentanan keamanan dari suatu aplikasi berbasis web, serta memberikan rekomendasi mitigasi yang sesuai dengan kerentanan yang terdeteksi.
-- Memberikan hands-on experience dalam penggunaan tools penetration testing.
-- Membantu network engineer untuk mengasah keahliannya dalam bidang keamanan jaringan komputer. 
-
-## 🔧 Tools yang Digunakan
-- [OWASP ZAP](https://www.zaproxy.org/): untuk fuzzing dan manual request injection.
-- [Wireshark](https://www.wireshark.org/): untuk menganalisis lalu lintas HTTP dan menangkap token.
-- [Redis](https://redis.io/): sebagai session store dengan pengaturan expired time.
+## 👩🏻‍💻 Contributors
+### Kelompok 5:
+- 2206059383 - [Aisyah Arifatul Alya](https://github.com/arifatalya)
+- 2206062926 - [Audrina Cristella Hasibuan](https://github.com/hyde0106)
 
 ## ⚠️ Kerentanan yang Disimulasikan
 ### 1. Insecure JWT
@@ -28,11 +17,11 @@ Mishaps adalah aplikasi web sederhana yang dibuat sebagai target simulasi *penet
 - Token dapat dimodifikasi bebas dan digunakan kembali.
 
 #### 🔐 Remediasi:
-- Mengganti algoritma JWT ke `RS256` (asymmetric crypto).
+- Mengganti algoritma JWT ke `RS256` (asymmetric crypto) dari `"none"`.
 - Menambahkan expired time untuk setiap session ID.
 
 ### 2. Weak Session ID
-- Session ID bersifat prediktif (contoh: menggunakan username sebagai ID).
+- Session ID bersifat prediktif.
 - Tidak ada mekanisme expiry time untuk session ID yang sudah ada.
 
 #### 🔐 Remediasi:
@@ -128,7 +117,7 @@ Eksploitasi dilakukan dengan menangkap lalu lintas jaringan saat proses login be
 5. Buka detail paket dan cari token (`JWT`) serta `Session ID` pada header response.
 6. Gunakan tools seperti [crackstation.net](https://crackstation.net/) untuk menguji prediktabilitas Session ID.
 7. Verifikasi kelemahan JWT melalui [jwt.io](https://jwt.io). Terlihat bahwa algoritma JWT menggunakan `"none"`, yang berarti token tidak memiliki signature dan sangat rentan terhadap modifikasi payload.
-8. Berdasarkan token tersebut, attacker bisa menyamar sebagai user sah dan mengakses fitur web tanpa login yang valid.
+8. Berdasarkan token tersebut, attacker bisa menyamar sebagai pengguna yang sah dan dapat mengakses fitur web tanpa login yang valid.
 
 ---
 
