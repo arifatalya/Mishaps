@@ -141,3 +141,24 @@ Eksploitasi dilakukan dengan teknik directory fuzzing dan replikasi request berb
 9. Akun dengan email target (misalnya `iniadalahcontoh@gmail.com`) akan berhasil dihapus.
 10. Verifikasi bahwa user tersebut tidak bisa login kembali karena akunnya telah dihapus secara ilegal.
 
+## 🎞 Tampilan User Interface:
+#### 1. Home Page (Not Logged In)
+<img width="2559" height="1512" alt="image" src="https://github.com/user-attachments/assets/06abe892-a79b-4ca5-8d42-905e7f7ad365" />
+
+#### 2. Home Page (Logged In)
+<img width="2559" height="1513" alt="image" src="https://github.com/user-attachments/assets/d2d3cf06-4f99-4e03-a9e4-63cd500d40c9" /> \
+<img width="2559" height="1511" alt="image" src="https://github.com/user-attachments/assets/aedd8fef-c124-4592-abbe-65c0c2afe094" /> \
+<img width="2559" height="1512" alt="image" src="https://github.com/user-attachments/assets/3ebe782f-a70b-4041-85a8-aeb4852e9f53" />
+
+#### 3. User Page
+- Editing \
+  <img width="1415" height="1487" alt="image" src="https://github.com/user-attachments/assets/79d91b46-98c5-4883-85ac-40626864ef06" />
+- Not Editing \
+  <img width="1415" height="1511" alt="image" src="https://github.com/user-attachments/assets/ffdb86b2-a952-47d8-873b-172d6252f5bb" />
+#### 4. Login Page
+<img width="2559" height="1512" alt="image" src="https://github.com/user-attachments/assets/59b44988-40d5-4af2-af76-3102a06818b6" />
+#### 5. Register Page
+<img width="2558" height="1511" alt="image" src="https://github.com/user-attachments/assets/bef1513d-9837-4430-997e-dd9c42dbbb68" />
+
+
+
