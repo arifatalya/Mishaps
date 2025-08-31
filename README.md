@@ -152,11 +152,13 @@ Eksploitasi dilakukan dengan teknik directory fuzzing dan replikasi request berb
 
 #### 3. User Page
 - Editing \
-  <img width="1415" height="1487" alt="image" src="https://github.com/user-attachments/assets/79d91b46-98c5-4883-85ac-40626864ef06" />
+  <img width="1344" height="1505" alt="image" src="https://github.com/user-attachments/assets/6972015e-ea5a-41ae-8328-32f8a4b3110a" />
 - Not Editing \
-  <img width="1415" height="1511" alt="image" src="https://github.com/user-attachments/assets/ffdb86b2-a952-47d8-873b-172d6252f5bb" />
+  <img width="1345" height="1510" alt="image" src="https://github.com/user-attachments/assets/c01dd238-d28f-416c-b22a-84550add063c" />
+  
 #### 4. Login Page
 <img width="2559" height="1512" alt="image" src="https://github.com/user-attachments/assets/59b44988-40d5-4af2-af76-3102a06818b6" />
+
 #### 5. Register Page
 <img width="2558" height="1511" alt="image" src="https://github.com/user-attachments/assets/bef1513d-9837-4430-997e-dd9c42dbbb68" />
 
